@@ -107,6 +107,14 @@ internal class MPVView(context: Context, attrs: AttributeSet) : BaseMPVView(cont
         val screenshotDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
         screenshotDir.mkdirs()
         MPVLib.setOptionString("screenshot-directory", screenshotDir.path)
+        MPVLib.setOptionString("blend-subtitles", "no")
+        MPVLib.setOptionString("sub-font", "Asap Condensed Medium")
+        MPVLib.setOptionString("sub-bold", "yes")
+        MPVLib.setOptionString("sub-font-size", "40")
+        MPVLib.setOptionString("sub-blur", "2.25")
+        MPVLib.setOptionString("sub-border-color", "#000000")
+        MPVLib.setOptionString("sub-border-size", "0.1")
+        MPVLib.setOptionString("sub-shadow-offset", "0")
     }
 
     override fun postInitOptions() {

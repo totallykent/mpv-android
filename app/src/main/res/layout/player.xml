@@ -164,6 +164,15 @@
                     tools:src="@drawable/ic_play_arrow_black_24dp" />
 
                 <Button
+                    android:id="@+id/skip85Btn"
+                    style="?buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/btn_skip85_desc"
+                    android:text="@string/btn_skip85"
+                    android:textColor="@android:color/white" />
+
+                <Button
                     android:id="@+id/cycleDecoderBtn"
                     style="?buttonBarButtonStyle"
                     android:layout_width="wrap_content"
