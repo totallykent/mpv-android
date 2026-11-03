@@ -102,6 +102,11 @@ internal object Utils {
         // we used to ship this, but it's no longer needed
         File("$configDir/subfont.ttf").delete()
 
+        val fontsDir = File("$configDir/fonts")
+        fontsDir.mkdirs()
+        for (name in arrayOf("AsapCondensed-Medium.ttf"))
+            copyAssetFile(assetManager, "fonts/$name", File(fontsDir, name))
+
         writeFontsConf(context, File("$configDir/fonts.conf"))
     }
 
